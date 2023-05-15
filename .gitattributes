@@ -8,4 +8,4 @@ bin export-ignore
 
 composer.lock export-ignore
 LICENSE export-ignore
-README.md export-ignor
+README.md export-ignore
