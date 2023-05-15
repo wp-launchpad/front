@@ -39,7 +39,7 @@ class ServiceProvider extends AbstractServiceProvider
     public function get_inflectors(): array
     {
         return [
-            UseAssets::class => [
+            UseAssetsInterface::class => [
                 'method' => 'set_assets',
                 'args' => [
                     Assets::class,
