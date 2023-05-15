@@ -23,6 +23,4 @@ trait UseAssets
         $this->assets = $assets;
     }
 
-
-
 }

@@ -30,4 +30,21 @@ class ServiceProvider extends AbstractServiceProvider
                 ->addArgument($this->getContainer()->get('plugin_launcher_file'));
         });
     }
+
+    /**
+     * Returns inflectors.
+     *
+     * @return array[]
+     */
+    public function get_inflectors(): array
+    {
+        return [
+            UseAssets::class => [
+                'method' => 'set_assets',
+                'args' => [
+                    Assets::class,
+                ],
+            ]
+        ];
+    }
 }
