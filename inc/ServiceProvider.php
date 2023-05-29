@@ -4,14 +4,18 @@ namespace LaunchpadFront;
 
 use LaunchpadBudAssets\Assets;
 use LaunchpadCore\Container\AbstractServiceProvider;
+use LaunchpadCore\Container\HasInflectorInterface;
+use LaunchpadCore\Container\InflectorServiceProviderTrait;
 use LaunchpadFilesystem\WPFilesystemDirect;
 use League\Container\Definition\Definition;
 
 /**
  * Service provider.
  */
-class ServiceProvider extends AbstractServiceProvider
+class ServiceProvider extends AbstractServiceProvider implements HasInflectorInterface
 {
+    use InflectorServiceProviderTrait;
+
     /**
      * Registers items with the container
      *
